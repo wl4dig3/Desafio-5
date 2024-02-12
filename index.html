@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 5</title>
     <link rel="stylesheet" href="./Assets/ccs/style.css">
-    <script src="./Assets/js/index.js"></script>
+    <script defer src="./Assets/js/index.js"></script>
 </head>
 
 <body>
     <h1>Desafio 5</h1>
     <section class="container-1">
         <p>Nueva Tarea</p>
-        <input id="input" type="text">
-        <button>Agregar</button>
+        <input id="input-tarea" type="text" placeholder="agrega una tarea">
+        <button id="btn-agregar" onclick="agregarTarea()">Agregar</button>
     </section>
     <section class="container-2">
         <div class="resumen">
-            <p>Total:<span id="total"></span></p>
-            <p>Realizadas:<span id="realizadas"></span></p>
+            <p>Total: <span id="total-tareas"></span></p>
+            <p>Realizadas: <span id="tareas-realizadas"></span></p>
         </div>
         <div class="display-info">
-            <span class="span-1">ID</span>Tarea<span <ul class="listado" id="listado">
-                <li>id<span class="span-line">tarea</span><input type="checkbox"></input><button>X</button></li>
-                </ul>
+            <span class="span-1">ID</span>Tarea<span 
+              <ul class="listado" id="listado">
+
+              </ul>  
         </div>
     </section>
 </body>
-
 </html>

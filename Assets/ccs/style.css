@@ -1,37 +1,76 @@
 body {
     background-color: rgb(238, 241, 241);
 }
+
 .container-1 {
     width: '60%';
     border: 1px solid black;
     margin: auto;
     padding: 2rem;
 }
+
 .container-2 {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .resumen {
     width: 10rem;
 }
+
 .display-info {
     width: 30rem;
     border: 1px solid red;
     margin-right: 3rem;
-    
+
+    & li {
+        list-style: none;
+        /* padding-left: 1rem; */
+
+    }
+
     & {
         .span-1 {
-            margin: 1rem;
+            margin-right: 7rem;
         }
     }
 
-    & li .span-line,  button {
+    & li .span-line, button {
         margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    & li .btn-erase {
+        background-color: rgb(224, 80, 80);
     }
 
     & li input {
         margin-left: 7rem;
     }
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-left: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
 }
